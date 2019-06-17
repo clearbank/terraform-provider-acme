@@ -393,6 +393,8 @@ func resourceACMECertificateCustomizeDiff(d *schema.ResourceDiff, meta interface
 		return err
 	}
 
+	// something
+
 	if int64(mindays) >= remaining {
 		d.SetNewComputed("certificate_pem")
 		d.SetNewComputed("certificate_p12")
